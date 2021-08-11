@@ -13,7 +13,7 @@
 #include "ns3/aodv-helper.h"
 #include "ns3/internet-module.h"
 #include "ns3/netanim-module.h"
-#include "pso-mobility-model.h"
+#include "ns3/pso-mobility-model.h"
 #include "ns3/mobility-helper.h"
 
 using namespace ns3;
