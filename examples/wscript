@@ -5,5 +5,5 @@ def build(bld):
         return;
 
     obj = bld.create_ns3_program('PSO-simulation',
-                                 ['pso-mobility','applications'])
+                                 ['pso-mobility','point-to-point','core','applications','mobility','config-store','netanim'])
     obj.source = 'PSO-simulation.cc'
