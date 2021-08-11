@@ -49,6 +49,24 @@ Configure and build ns-3 from the `ns-3-dev` folder:
 ./waf build
 ```
 
+### NetAnim (Visualization) ###
+
+You will need to download a version of NetAnim to observe the visualization of PSO (NetAnim version 3.108 is recommended).
+https://www.nsnam.org/wiki/NetAnim
+
+The NetAnim download folder should reside next to folders such as scratch, contrib, and examples, which all exist within the folder representing the version of ns-3 you have installed.
+
+### Running (using NetAnim version 3.108) ###
+
+```bash
+./waf --run PSO-simulation
+cd netanim-3.108
+./NetAnim
+```
+
+Now, using the icon in the upper left hand corner, simply select and load the PSO.xml file. 
+
+
 This module does not provide Python bindings at the moment.
 
 ### Documentation ###
