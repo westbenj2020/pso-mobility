@@ -3,13 +3,13 @@
 def build(bld):
     module = bld.create_ns3_module('pso-mobility', ['core'])
     module.source = [
-        'model/pso-mobility.cc'
+        'model/pso-mobility-model.cc'
         ]
     
     headers = bld(features='ns3header')
     headers.module = 'pso-mobility'
     headers.source = [
-        'model/pso-mobility.h'
+        'model/pso-mobility-model.h'
         ]
     
     if (bld.env['ENABLE_EXAMPLES']):
