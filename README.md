@@ -76,4 +76,4 @@ To compile the documentation, please follow the instructions from the [ns-3 manu
 Basic steps:
 
 1. Install the documentation-specific dependencies as described in the [ns-3 installation guide](https://www.nsnam.org/wiki/Installation)
-1. You might need to fix the ImageMagick permissions for ghostscript files
+1. You might need to fix the ImageMagick permissions for ghostscript files.
