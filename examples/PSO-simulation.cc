@@ -28,7 +28,6 @@ int main (int argc, char *argv[])
     "Y", StringValue ("ns3::UniformRandomVariable[Min=0|Max=100]"),
     "Z", StringValue ("ns3::UniformRandomVariable[Min=0|Max=100]"));
   mobility.Install (c); // tether nodes to mobility model
-  wifiPhy.EnablePcap ("PSO", cDevices);
   //Ascii Trace Metrics can be processed using Tracemetrics Software.
   AnimationInterface anim("PSO.xml");
   AsciiTraceHelper ascii;
