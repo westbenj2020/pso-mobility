@@ -27,12 +27,10 @@ int main (int argc, char *argv[])
     "X", StringValue ("ns3::UniformRandomVariable[Min=0|Max=100]"),
     "Y", StringValue ("ns3::UniformRandomVariable[Min=0|Max=100]"),
     "Z", StringValue ("ns3::UniformRandomVariable[Min=0|Max=100]"));
-  mobility.Install (c); // tether nodes to mobility model
-  //Ascii Trace Metrics can be processed using Tracemetrics Software.
+  mobility.Install (c);
   AnimationInterface anim("PSO.xml");
   AsciiTraceHelper ascii;
   mobility.EnableAsciiAll(ascii.CreateFileStream("PSOm.tr"));
-  //Simulator::Schedule (Seconds (1), &PSOMobilityModel::Update);
   Simulator::Stop (Seconds (500.0));
   Simulator::Run ();
   Simulator::Destroy ();
